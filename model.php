@@ -163,8 +163,6 @@ class Audit_Kpi_Model {
           LEFT JOIN system_user u ON u.user_id=c.manager_user_id
         ORDER BY closed_product DESC 
     ';
-//    echo '<pre>';
-//    print_r($sql);exit;
     $res = $this->db->query($sql);
 
     $sql = '
